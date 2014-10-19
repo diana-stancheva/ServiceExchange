@@ -1,6 +1,8 @@
 ServiceExchange - EntryPoint Team
 ===============
-Diana Stancheva
-Veneta Rangelova
+Diana Stancheva<br/>
+Veneta Rangelova<br/><br/>
+
+
 
 Telerik Hackathon 2014
