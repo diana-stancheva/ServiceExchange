@@ -1,0 +1,78 @@
+<!-- userProfileView.html -->
+<div data-role="view" id="userProfile" data-layout="default" class="profile-view" 
+     data-show="app.UserProfile.show" data-init="app.UserProfile.init">
+    <div data-role="header">
+        <div data-role="navbar">
+            <h3 data-bind="text: title"></h3>
+            <a id="my-drawer" class="icon-align-justify" data-role="button" href="#appDrawer" data-rel="drawer" data-align="left" data-icon="drawer-button"></a>
+        </div>
+    </div>
+    <table class="profile-data">
+        <tr>
+            <td>
+                <div class="user-picture" onclick="app.UserProfile.getPictureFromGallery()" onfocus="    app.UserProfile.getPictureFromGallery()">
+                    <img id="myImage" data-bind="attr: { src: Picture }" />
+                </div>
+            </td>
+            <td valign="top">
+                <div class="user-data">
+                    <span data-bind="text: DisplayName"></span>
+                </div>
+                <div class="user-details">
+                    <span data-bind="text: Country"></span>, <span data-bind="text: Town"></span>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <ul id="services-container" data-role="listview" class="services-container" data-template="services-template" data-bind="source: Services"></ul>
+                <input class="add-service" type="text" id="add-service" autofocus="autofocus" placeholder="Add a service" />
+                <span id="addService">
+                    <button data-role="button" onclick="app.UserProfile.addService()" class="btn btn-addService">Add</button>
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <table class="user-stats-table">
+                    <tr>
+                        <td>
+                            <div>43</div>
+                            <div class="text">exchanges</div>
+                        </td>
+                        <td>
+                            <div>5</div>
+                            <div class="text">returnings</div>
+                        </td>
+                        <td>
+                            <div>0</div>
+                            <div class="text">no-shows</div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <div class="reviews-header"><b>Reviews & Comments (12)</b></div>
+                <table data-template ="services-template" data-bind="">
+                    <tr>
+                        <td valign="top" style="border-radius: 100px; overflow:hidden;"><img src="https://bs3.cdn.telerik.com/v1/iXjTywwyOUMukD8W/fd714940-56ca-11e4-a6d9-8d7210147b38" width="50" height="50" /></td>
+                        <td style="font-size: small;">A review is an evaluation of a publication, product, service, or company such as a movie (a movie review), video game, musical composition </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<script id="services-template" type="text/x-kendo-template">
+    <li class="service" data-bind="text: this" ></li>
+</script>
+
+<script id="review-template" type="text/x-kendo-template">
+    <tr>
+        <td style="border-radius: 100px; overflow:hidden;"><img src="https://bs3.cdn.telerik.com/v1/iXjTywwyOUMukD8W/fd714940-56ca-11e4-a6d9-8d7210147b38" width="50" height="50" /></td>
+        <td style="font-size: small;">A review is an evaluation of a publication, product, service, or company such as a movie (a movie review), video game, musical composition </td>
+    </tr>
+</script>

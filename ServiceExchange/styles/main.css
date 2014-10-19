@@ -1,0 +1,624 @@
+body
+{
+}
+
+div.km-widget.km-navbar {
+    height: 100px !important;
+}
+
+.km-flat
+{
+    /*font: normal 1em "HelveticaNeue Light","Roboto Light","Slate Light","Segoe WP",NokiaPureTextLight,sans-serif;*/
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.km-flat .km-list input[type=password], .km-flat .km-list input[type=search], .km-flat .km-list input[type=number], .km-flat .km-list input[type=tel], .km-flat .km-list input[type=url], .km-flat .km-list input[type=email], .km-flat .km-list input[type=month], .km-flat .km-list input[type=color], .km-flat .km-list input[type=week], .km-flat .km-list input[type=date], .km-flat .km-list input[type=time], .km-flat .km-list input[type=datetime], .km-flat .km-list input[type=datetime-local], .km-flat .km-list input[type=text]:not(.k-input), .km-flat .km-list select:not([multiple]), .km-flat .km-list .k-dropdown-wrap, .km-flat .km-list textarea, .km-flat .km-list .k-dropdown-wrap .k-input
+{
+    color: #415060;
+}
+
+.km-flat, .km-flat .km-navbar, .km-flat .km-detail, .km-flat .km-content
+{
+    color: #415060;
+    background: #e9eeee;
+}
+
+.km-flat, .km-flat .km-navbar, .km-flat .km-detail, .km-flat .km-content .km-header
+{
+    color: #fff;
+    background: #4cd864;
+}
+
+/*.km-ios #my-drawer .km-content, .km-android #my-drawer .km-content, .km-blackberry #my-drawer .km-content,
+.km-ios #my-drawer .km-list > li, .km-android #my-drawer .km-list > li, .km-blackberry #my-drawer .km-list > li,
+.km-ios #my-drawer .km-listview-link > .km-icon, .km-android #my-drawer .km-listview-link > .km-icon, .km-blackberry #my-drawer .km-listview-link > .km-icon,
+.km-ios #my-drawer .km-list li > .km-icon, .km-android #my-drawer .km-list li > .km-icon, .km-blackberry #my-drawer .km-list li > .km-icon
+{
+color: #fff;
+background: #4e4e4e;
+}*/
+
+#my-drawer
+{
+    color: #4cd864;
+    background: #fff;
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 22px;
+}
+
+#appDrawer .km-view-title{
+    padding-top:25px;
+}
+
+#seApp .center-block
+{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#seApp .hide-text
+{
+    overflow: hidden;
+    text-indent: -999px;
+}
+
+#seApp .center-text
+{
+    text-align: center;
+}
+
+.disabled
+{
+    position: relative;
+    display: block;
+}
+
+.disabled:before
+{
+    position: absolute;
+    top: 0;
+    right: -1px;
+    bottom: 0;
+    left: -1px;
+    z-index: 1;
+    content: '';
+}
+
+/* Forms */
+
+::-webkit-input-placeholder
+{
+    color: #b6c5c6;
+}
+
+:-moz-placeholder
+{
+    color: #b6c5c6;
+}
+
+::-moz-placeholder
+{
+    color: #b6c5c6;
+}
+
+:-ms-input-placeholder
+{
+    color: #b6c5c6;
+}
+
+#seApp.km-flat form .km-list > li
+{
+    padding: .7em .7em .5em;
+    border-color: #eaeced;
+}
+
+#seApp.km-flat form .km-listinset > li:first-child,
+#seApp.km-flat form .km-listgroupinset .km-list > li:first-child
+{
+    border-width: 0 0 1px;
+    border-color: #eaeced;
+    -webkit-border-radius: 2px 2px 0 0;
+    -moz-border-radius: 2px 2px 0 0;
+    border-radius: 2px 2px 0 0;
+}
+
+#seApp.km-flat form .km-listinset > li:last-child,
+#seApp.km-flat form .km-listgroupinset .km-list > li:last-child
+{
+    border: 0 none;
+    -webkit-border-radius: 0 0 2px 2px;
+    -moz-border-radius: 0 0 2px 2px;
+    border-radius: 0 0 2px 2px;
+}
+
+#seApp.km-flat .km-list input[type="text"]:not(.k-input),
+#seApp.km-flat .km-list input[type="password"],
+#seApp.km-flat .km-list input[type="email"],
+#seApp.km-flat .km-list input[type="date"],
+#seApp.km-flat textarea,
+#seApp.km-flat select
+{
+    position: static;
+    width: 100%;
+    height: 30px;
+    font-size: 1rem;
+}
+
+#seApp.km-flat select
+{
+    padding: .4em .2em;
+}
+
+/* Buttons */
+
+#seApp .btn
+{
+    position: relative;
+    margin: 0 -1px;
+    padding: .6em 0;
+    border: 0 none;
+    background-color: #3598db;
+    font-size: 1.2rem;
+}
+
+#seApp .disabled .btn
+{
+    opacity: .35;
+}
+
+#seApp .btn-login,
+#seApp .signup-view .btn-signup,
+#seApp .btn-addService
+{
+    background-color: #4cd864;
+}
+
+.btn-addService {
+    width:100%;
+    text-align:center;
+}
+
+#seApp .signup-view .btn-signup:focus
+{
+    color: #4cd864;
+}
+
+#seApp .signup-view .btn-signup,
+#seApp .btn-delete
+{
+    display: block;
+    text-align: center;
+}
+
+#seApp .btn-delete
+{
+    background-color: #e84c3d;
+}
+
+#seApp .oauth-item .btn
+{
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+#seApp .btn-login-fb
+{
+    background-image: url(images/icon-facebook.png);
+}
+
+#seApp .btn-login-google
+{
+    background-image: url(images/icon-google.png);
+}
+
+#seApp .btn-login-liveid
+{
+    background-image: url(images/icon-liveid.png);
+}
+
+#seApp .btn-login-adsf
+{
+    background-image: url(images/icon-adsf.png);
+}
+
+#seApp .km-header .nav-button
+{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    width: 2em;
+    /*height: 2em;*/
+    border: 0 none;
+    background-color: transparent;
+    background-position: 0 50%;
+    background-repeat: no-repeat;
+}
+
+#seApp .km-header .nav-button-back
+{
+    background-image: url(images/icon-arrow_left.png);
+    background-position: .65em 50%;
+}
+
+#seApp .km-header .nav-button-add
+{
+    background-image: url(images/icon-add.png);
+}
+
+#seApp .km-header .nav-button-cancel,
+#seApp .km-header .nav-button-post
+{
+    width: auto;
+    height: 2.5em;
+    font-size: .85rem;
+    line-height: 2.5em;
+}
+
+/* Activities */
+
+#seApp .activities-view .km-content,
+#seApp .activity-view .km-content,
+#seApp .add-activity-view .km-content,
+#seApp .add-comment-view .km-content,
+#seApp .activities-view .km-listview
+{
+    background-color: #fff;
+}
+
+#seApp .activities-view .km-list > li,
+#seApp .activity-view .km-list > li
+{
+    overflow: visible;
+    padding: .75em 0;
+    border-width: 0 0 1px;
+    border-color: #eaeced;
+    background-color: #fff;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: #34495e;
+}
+
+#seApp .activity-view .comments-wrp
+{
+    margin-top: 1em;
+    border-top: 1px solid #eaeced;
+}
+
+#seApp .activities-view .km-list > li:first-child
+{
+    padding-top: 0;
+}
+
+#seApp .activity-content
+{
+    position: relative;
+    padding-left: 5em;
+    font-size: .85rem;
+}
+
+/* Welcome screen */
+
+#seApp .app-logo,
+#seApp .app-name
+{
+    margin-top: 1.5em;
+}
+
+#seApp .app-logo
+{
+    width: 247px;
+    height: 32px;
+    background: transparent url(images/logo-telerik_devcloud.png) no-repeat 0 0;
+}
+
+#seApp .app-name
+{
+    margin-bottom: 1.5em;
+}
+
+#seApp .app-name small
+{
+    display: block;
+    font-weight: 400;
+    font-size: 1.15rem;
+}
+
+#login-form
+{
+    margin-top: -40px;
+}
+
+#login-form .username,
+#login-form .password
+{
+    margin-bottom: 10px;
+    position: relative;
+}
+
+#login-form .username:before,
+#login-form .password:before
+{
+    position: absolute;
+    top: 50%;
+    right: .75em;
+    display: block;
+    margin-top: -.5em;
+    width: 1em;
+    height: 1em;
+    background-color: transparent;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    content: '';
+}
+
+#login-form .username:before
+{
+    background-image: url(images/icon-username.png);
+}
+
+#login-form .password:before
+{
+    background-image: url(images/icon-password.png);
+}
+
+#seApp .welcome-scrn .wlcome-header
+{
+    color: #ffffff; 
+    background: #4cd864;
+    padding: 20px 0 50px 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+}
+
+#seApp .welcome-scrn .group-wrp
+{
+    margin: -1em 1em 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+}
+
+#seApp .welcome-scrn .group-wrp li
+{
+    margin: 1.5em 0 0;
+}
+
+#seApp .welcome-scrn .group-wrp .btn
+{
+    display: block;
+}
+
+#seApp .welcome-scrn .group-wrp .oauth
+{
+    margin-right: -1%;
+    margin-left: -1%;
+}
+
+#seApp .welcome-scrn .group-wrp .oauth .oauth-item
+{
+    float: left;
+    margin: 0 1%;
+    width: 23%;
+}
+
+#seApp .welcome-scrn .group-wrp .oauth .btn
+{
+    overflow: hidden;
+    height: 45px;
+    text-indent: -999px;
+}
+
+#seApp .welcome-scrn .group-wrp .oauth .btn span,
+#seApp .welcome-scrn .group-wrp .btn-signup span
+{
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+#seApp .welcome-scrn .group-wrp .btn-signup
+{
+    border: 0 none;
+    background-color: transparent;
+}
+
+/* App Footer */
+
+#seApp .welcome-scrn .km-footer
+{
+    background-color: transparent;
+    color: #415060;
+    text-align: center;
+    background: #e9eeee;
+}
+
+#seApp .welcome-scrn .km-footer p
+{
+    font-size: .75rem;
+}
+
+/* No API Key screen */
+
+#seApp .noapikey-scrn p
+{
+    line-height: 1.5;
+    color: #e4e4e4;
+}
+
+#seApp .noapikey-scrn p strong,
+#seApp .noapikey-scrn p span
+{
+    color: #fff;
+}
+
+#seApp .noapikey-scrn p span
+{
+    font-weight: 600;
+}
+
+/* Signup */
+
+#seApp #signup-form li
+{
+    margin-bottom: 5px;
+}
+
+#setApp #signup
+{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+#seApp .signup-view .select-wrp
+{
+    -webkit-border-radius: 0 0 2px 2px;
+    -moz-border-radius: 0 0 2px 2px;
+    border-radius: 0 0 2px 2px;
+}
+
+#seApp.km-flat .signup-view .km-listinset > li:last-child
+{
+    margin: .5em 0 0;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+
+#seApp .txtarea-wrp textarea
+{
+    float: none;
+    height: 5.5em;
+    resize: none;
+}
+
+#seApp .signup-view .signup-btn-wrp
+{
+    margin: 0 1em;
+}
+
+#seApp .signup-view .select-wrp select
+{
+    color: #b6c5c6;
+}
+
+#seApp .signup-view .select-wrp option:first-child
+{
+    color: #b6c5c6;
+}
+
+/* USER PROFILE */
+.profile-data
+{
+    margin-left: auto;
+    margin-right:auto;
+    width:85%;
+}
+
+.user-picture
+{
+    width: 100px;
+    height: 100px; 
+    border-radius: 200px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+     margin-bottom: 10px;
+    border: 1px solid #b6c5c6;
+}
+
+#myImage
+{ 
+    width: 100%;
+    height: 100%;
+}
+
+.user-data
+{
+    margin-top: 20px;
+    font-size: larger;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.user-details
+{
+    margin-top: 0;
+    font-size: smaller;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.services-container
+{
+    list-style-type: none;
+    margin: 0;
+    padding:0;
+}
+
+.km-flat .services-container.km-list>li,
+.services-container .service
+{
+    display: block;
+    width: 100%;
+    height: 40px;
+    line-height:30px;
+    font-weight: bold;
+    padding: 5px;
+    margin:0;
+    margin-bottom:5px;
+    background:#b6c5c6;
+    box-shadow:none;
+    -webkit-box-shadow: none;
+}
+
+.add-service {
+    display: block;
+    width: 100%;
+    height: 40px;
+    font-weight: bold;
+    padding: 5px;
+    margin-bottom:5px;
+    background: #e9eeee;
+    border: 1px dashed #b6c5c6;
+    text-align:center;
+}
+
+.service{
+    background: #b6c5c6 !important;
+    display:block;
+    width: 80%;
+    height: 40px;
+}
+
+.user-stats-table {
+    width: 96%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 10px;
+    margin-bottom:10px;
+}
+
+.user-stats-table tr td {
+    border-left: 1px solid #415060;
+    padding: 5px;
+}
+
+.user-stats-table tr td:last-of-type{
+    border-right: 1px solid #415060;
+}
+
+.user-stats-table tr td div {
+    text-align:center;
+}
+
+.user-stats-table .text {
+    font-size:small;
+    
+}
+
+.reviews-header {
+    padding: 0 0 10px 0;
+}
