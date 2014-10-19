@@ -27,6 +27,10 @@
     <Content Include="cordova.wp8.js" />
     <Content Include="index.html" />
     <Content Include="scripts\app.js" />
+    <Content Include="scripts\app\exchanges.js" />
+    <Content Include="scripts\app\appSettings.js" />
+    <Content Include="scripts\app\myExchanges.js" />
+    <Content Include="scripts\app\sent.js" />
     <Content Include="scripts\app\inbox.js" />
     <Content Include="scripts\app\contacts.js" />
     <Content Include="scripts\app\about.js" />
@@ -79,6 +83,10 @@
     <Content Include="styles\images\sprite.png" />
     <Content Include="styles\main-ok.css" />
     <Content Include="styles\main.css" />
+    <Content Include="views\settingsView.html" />
+    <Content Include="views\exchangesView.html" />
+    <Content Include="views\myExchangesView.html" />
+    <Content Include="views\sentView.html" />
     <Content Include="views\inboxView.html" />
     <Content Include="views\aboutView.html" />
     <Content Include="views\noApiKey.html" />
