@@ -20,8 +20,9 @@ app.UserProfile = (function () {
         //if (isOnline === true) {
         //    value = "Online";
         ////}
+
         var userModel = kendo.observable({
-                                             title: "User Profile",
+                                             title: "My Account",
                                              Username: currentUser.data.Username,
                                              DisplayName: currentUser.data.DisplayName,
                                              Email: currentUser.data.Email,
